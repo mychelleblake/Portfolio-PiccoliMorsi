@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PiccoliMorsi</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+
+<div id="wrapper">
+    <h1 class="name">Piccoli Morsi</h1>
+    <div id="big-picture">
+        <div id="hero">
+                <div class="current"><img src="assets/restaurantphotos/slider1.jpg" alt=""></div>
+                <div><img src="assets/restaurantphotos/slider2.jpg" alt=""></div>
+         </div>
+     </div>
+
+    <!-- <div id="api Panel - 3 boxes across for api stuf"> -->
+        <div id="api-row">
+            <div class="api-panel redAPI" id="news">
+            </div>
+            <div class="api-panel redAPI" id="special">
+            </div>
+            <div class="api-panel redAPI" id="map">
+                <h3 class="locationBoxH4">Our Location</h3>
+                <div><iframe class="small" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.335590207901!2d-115.15467894974906!3d36.15838747998808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446144584501" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <p class="locationBox">11112 S. Casino Center Blvd, Las Vegas, NV 89104</p>
+                <p class="locationBox">555-555-1234 * 555-555-1234 * info@piccolimorsi.com</p>
+            </div>
+        </div>
+
+    <div id="lower-body"> <!-- 2 panels left-right, to bottom -->
+    <div id="left-full-panel">
+          <div id="tabMenu">
+            <div id="toggleButton" class="toggleButton">
+            <ul class="nav nav-tabs">
+                <li class = "active">
+                    <a href = "#tab1">Our Story</a>
+                </li>
+                <li>
+                    <a href = "#tab2">Our Menu</a>
+                </li>
+                <li>
+                    <a href = "#tab3">Reservations</a>
+                </li>
+                <li>
+                    <a href = "#tab4">Reviews</a>
+                </li>
+            </ul>
+          </div>
+          </div> <!--tabMenu ends-->
+
+    <!-- content in the tab menus -->
+            <section id="tab1" class="tab-content active">
+                <div>
+                    <p>Founded in 1990 in Italy brought to United States in 2015. The idea of Piccoli Morsi ("Small Bites") is the creation of the owners Monchellio and Ralphillio. It all started when Monchellio and Ralphillio met at a local dog park and struck up a conversation about their dogs and how much they enjoy spending time with them. After finding a common love for dogs and Italian food Monchellio and Ralphillio founded Piccoli Morsi, a full-service, full-course Italian restaurant that caters to canines and their owners.</br></br>
+                    ​<img src="assets/restaurantphotos/handwritten-italian-marketing-menu-medium.jpg">Piccoli Morsi offers a fine dining experience featuring Iron Yard Chef Michael Sweenio (not to be confused with famed Front End Designer Michael Sweeney). Piccoli Morsi is located in the beautiful Arts District in downtown Las Vegas and welcomes all breeds and their owners.  We are famous in Italy for our service and special dishes designed for canines. We use the most exquisite ingredients, working with organic produce, and serving the highest quality food to the delight of our customers.</br></br>
+                    Dine in comfortable Euro-style. The restaurant has two different atmospheres: the first one is casual where the canines and their owners enjoy our beautiful outdoor beer garden, surrounded by natural landscaping with soft, twinkling lights strung through the trees, providing a subtly festive aura. </p><img src="assets/dogphotos/restaurantdog8.jpg">Your dog can enjoy his food next to you and at the same time our customers can appreciate the natural surroundings, and the great service we are known for. Offering complementary water bowls and home baked biscuits that are located throughout our patio area, Piccoli Morsi is the perfect place to relax, enjoy our 5-star Italian menu, and sample our special "Cane Cucina" selections--tasty treats for your 4-footed friend.
+                    <p>Our second option is the indoor dining room that it is more elegant, and is the favorite place for our customers to celebrate special occasions like birthday parties, anniversaries, or just a gathering of friends after the big game.</p>
+
+            </section>
+
+            <section id="tab2" class="tab-content hide">
+              <div id="tab2" class="tab_content">
+                <h2>Our Menu Selections</h2>
+                <p> <span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/> = Local Favorite</span>
+                    <span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/> = Low Sodium</span>
+                    <span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/> = Under 500 Calories</span></p>
+                <div class="menu_divisions" id="breakfast"></div>
+                <div class="menu_divisions" id="salads"></div>
+                <div class="menu_divisions" id="soups"></div>
+                <div class="menu_divisions" id="sandwiches"></div>
+                <div class="menu_divisions" id="toppings"></div>
+                <div class="menu_divisions" id="drinks"></div>
+                <div class="menu_divisions" id="desserts"></div>
+                <div class="menu_divisions" id="veraDesserts"></div>
+
+              </div><!-- #tab2 -->
+            </section>
+
+            <section id="tab3" class="tab-content hide">
+                <div>
+
+                        <form id="reservations">
+                        <input type="text" name="fname" placeholder="First Name"/>
+                        <input type="text" name="lname" placeholder="Last Name"/></br>
+                        <input type="text" name="phone" placeholder="Phone"/>
+                        <input type="text" name="email" placeholder="Email"/>
+​
+                        <h3>How many people in your party?</h3>
+                         <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                          </select>
+    ​
+                        <h3>How many dogs in your party?</h3>
+                            <select>
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+    ​
+                         <h3>Inside or Patio?</h3>
+                            <select>
+                                <option>Inside</option>
+                                <option>Patio</option>
+                                <option>No Preference</option>
+                            </select>
+​                           <h3>Date requested?</h3>
+                        <input type="text" name="date" placeholder="Date requested"/>
+
+                        <h3>Time of Reservation</h3>
+                            <select>
+                                <option>5:00</option>
+                                <option>5:30</option>
+                                <option>6:00</option>
+                                <option>6:30</option>
+                                <option>7:00</option>
+                                <option>7:30</option>
+                                <option>8:00</option>
+                                <option>8:30</option>
+                                <option>9:00</option>
+                                <option>9:30</option>
+                            </select>
+                            </br></br>
+                         <button type = "submit" name="book" value="Book"><a href="#">Book Now<a></button>
+
+                         <h3>You may also use Open Table to book your reservation:</h3>
+                         <a href="#"><img src="assets/social/OpenTable.jpg"></a>
+    ​
+                         </form>
+                </div>
+            </section>
+
+            <section id="tab4" class="tab-content hide">
+                <div id="reviews">
+                  <!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_56355f15bc451(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_56355f15bc451"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_56355f15bc451=document.createElement('script');fcs_56355f15bc451.type="text/javascript";fcs_56355f15bc451.src=ajaxpath_56355f15bc451((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=56355f15bc451&s=&Size=10#!56355f15bc451");setTimeout("document.getElementById('fcs_div_56355f15bc451').appendChild(fcs_56355f15bc451)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+
+                </div>
+            </section>
+
+      </div>
+
+        <div id="right-full-panel">
+            <ul id="foods">
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/appetizer.jpg"></li>
+                <!--<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/bruschetta.jpg"></li>-->
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/dessert1.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/lasagna.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/wine.jpg"></li>
+
+            </ul>
+
+            <div id="logo">
+                <img src="assets/Logo_tabitha.jpg">
+            </div>
+
+
+        </div> <!-- End of right-full-panel div -->
+
+
+    <div id="footer">
+    <p class="copyright">Copyright 2015 PiccoliMorsi - Web Design by The Iron Yard</p>
+      <div id="footerSocial">
+      <ul id="footerUL">
+        <li><img src="assets/social/1446098534_facebook_online_social_media.png"/></li>
+        <li><img src="assets/social/1446098542_twitter_online_social_media.png"/></li>
+        <li><img src="assets/social/1446098560_instagram_online_social_media.png"/></li>
+      </ul>
+      </div>
+      </div> <!-- End of footer div-->
+
+
+
+</div> <!-- END of wrapper div -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script src="main.js"></script>
+
+    <script type="x-tmpl-mustache" id="newsFormTemplate">
+        <h3 class="locationBoxH4">Latest News</h3>
+        <h5 id="news-title">{{data.title}}</h5>
+        <h5 id="news-date">{{data.date_published}}</h5> </br>
+        <p id="news-post">{{data.post}}&nbsp;<a href="#">Read more...</a></p>
+    </script>
+
+
+
+
+  <script type="x-tmpl-mustache" id="specialsFormTemplate">
+    <h3 class="locationBoxH4">Today&#39s Special</h3>
+        <div id="specialsImage"><img src="{{imgsrc}}"></div>
+    <p id="specialItem">{{td.item}}</p>
+    <p id="special-Price">{{td.price}}</p>
+    <p class="specialDescription">{{td.description}}</p>
+  </script>
+
+  <!--<script type="x-tmpl-mustache" id="aboutFormTemplate">
+    <h3>Our Story</h3>
+    <p>{{data.text1}}</p>
+    <p></p>
+    <p>{{data.text2}}</p>
+  </script>-->
+
+  <script type="x-tmpl-mustache" id="breakfastFormTemplate">
+  <h2 class="menu-course">Breakfast</h2>
+  {{#breakfast}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img id="favs" src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
+  {{/breakfast}}
+  </script>
+
+  <script type="x-tmpl-mustache" id="saladsFormTemplate">
+  <h2 class="menu-course">Salads</h2>
+  {{#salads}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
+  {{/salads}}
+  </script>
+
+  <script type="x-tmpl-mustache" id="soupsFormTemplate">
+  <h2 class="menu-course">Soups</h2>
+  {{#soups}}
+  <h4 class="item">{{item}}</h4>
+  <p class="soup-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/soups}}
+  </script>
+
+  <!--<script type="x-tmpl-mustache" id="sidesFormTemplate">
+  <h2 class="menu-course">Sides</h2>
+  {{#sides}}
+  <h4 class="item">{{item}}</h4>
+  <p class="sides-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/sides}}
+  </script>-->
+
+  <script type="x-tmpl-mustache" id="toppingsFormTemplate">
+  <h2 class="menu-course">Toppings</h2>
+  {{#toppings}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/toppings}}
+  </script>
+
+  <!--<script type="x-tmpl-mustache" id="mainFormTemplate">
+  <h2 class="menu-course">Entrees</h2>
+  {{#mains}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
+  {{/mains}}
+  </script>-->
+
+  <!--<script type="x-tmpl-mustache" id="drinksFormTemplate">
+  <h2 class="menu-course">Beverages</h2>
+  {{#drinks}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/drinks}}
+  </script>-->
+
+ <!-- <script type="x-tmpl-mustache" id="dessertsFormTemplate">
+  <h2 class="menu-course">Desserts</h2>
+  {{#desserts}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/desserts}}
+  </script>-->
+
+  <!-- <script type="x-tmpl-mustache" id="veraDessertsFormTemplate">
+  <h2 class="menu-course">VeraDesserts</h2>
+  {{#veraDesserts}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/veraDesserts}}
+  </script>-->
+
+  <!-- <script type="x-tmpl-mustache" id="dogFormTemplate">
+  <h2 class="menu-course">Cane Cucina</h2>
+  {{#CaneCucina}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
+  {{/CaneCucina}}
+  </script>-->
+
+
+<!-- MUSTACHE TEMPLATES ********************************************************************* -->
+</body>
+</html>
